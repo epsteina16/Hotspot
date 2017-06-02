@@ -60,7 +60,14 @@ app.get('/highscores', function(req, res){
 				if (err){
 					console.log(err);
 				} else if (result.length){
-					res.render('highscore', {layout: 'static_layout', list: result});
+					var arr = [];
+					result.sort(compare);
+					for (var i=0; i < 20; i++){
+						if (i < result.length){
+							arr.push(result[i]);
+						}
+					}
+					res.render('highscore', {layout: 'static_layout', list: arr});
 				} else{
 					console.log("Not found");
 				}
@@ -74,6 +81,16 @@ app.use(function(req,res){
 	res.status(404);
 	res.render("404", {layout: 'static_layout'});
 })
+
+function compare(a,b){
+	if (a.score < b.score){
+		return -1;
+	} else if (a.score > b.score){
+		return 1;
+	} else{
+		return 0;
+	}
+}
 
 
 var server = app.listen(process.env.PORT || 8081, function () {
