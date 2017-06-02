@@ -46,7 +46,7 @@ app.post('/process', function(req, res){
 			});
 			db.close();
 		}
-	}
+	})
 })
 
 app.get('/highscores', function(req, res){
