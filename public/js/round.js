@@ -3,14 +3,15 @@ function Round(){
 	this.y = random(height);
 	this.col = color(255);
 	this.score = 0;
+	this.size = Math.sqrt((width * height)/1500);
 	this.hotspot = new Hotspot(this.x,this.y);
 
 	this.clicked = function(){
 		background(255);
 		var distance = dist(mouseX, mouseY, this.x, this.y);
-		if (distance <= 80){
+		if (distance <= this.size){
 			this.col = color(0,255,0);
-			var circle = new Circle(mouseX, mouseY, this.col);
+			var circle = new Circle(mouseX, mouseY, this.col, this.size);
 			circle.display();
 			this.score = 100;
 		} else{
@@ -20,7 +21,7 @@ function Round(){
 			var red = 255 - (255 * proximity);
 			var blue = 255 * proximity;
 			this.col = color(red, 0, blue);
-			var circle = new Circle(mouseX, mouseY, this.col);
+			var circle = new Circle(mouseX, mouseY, this.col, this.size);
 			circle.display();
 			if ((100 - (100 * proximity)) > this.score){
 				this.score = 100 - (100 * proximity);
