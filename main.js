@@ -13,7 +13,7 @@ app.use(require('cookie-parser')(credentials.cookieSecret));
 
 var mongo = require("mongodb");
 var MongoClient = mongo.MongoClient;
-var url = 'mongodb://localhost:27017/hotspot';
+var url = process.env.MONGODB_URI;
 
 app.get('/', function (req, res) {
 	console.log("home request");
