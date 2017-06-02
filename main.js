@@ -67,7 +67,6 @@ app.get('/highscores', function(req, res){
 							arr.push(result[i]);
 						}
 					}
-					arr.sort(compare);
 					res.render('highscore', {layout: 'static_layout', list: arr});
 				} else{
 					console.log("Not found");
@@ -85,9 +84,9 @@ app.use(function(req,res){
 
 function compare(a,b){
 	if (a.score < b.score){
-		return -1;
-	} else if (a.score > b.score){
 		return 1;
+	} else if (a.score > b.score){
+		return -1;
 	} else{
 		return 0;
 	}
