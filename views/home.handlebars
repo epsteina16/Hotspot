@@ -1,0 +1,8 @@
+<div id="form">
+<form class="scoreForm" method="POST" role="form" action="/process?form=addscore">
+	<input type="hidden" name="_csrf" value="{{csrf}}">
+	<p>Name: <input name="name" type="text"></p>
+	<p>Score: <input id="score_input" name="score" type="text" value="" readonly></p>
+	<input type="submit" value="Submit">
+</form>
+</div>

@@ -1,0 +1,83 @@
+body{
+	padding: 0;
+	margin:0;
+	position: relative;
+	color: red;
+}
+
+#header{
+	width: 50%;
+	float: left;
+	color: red;
+	font-size: 20px;
+	padding: 20px;
+}
+
+#score{
+	width: 40%;
+	float: left;
+	color: red;
+	font-size: 20px;
+	padding: 20px;
+	text-align: right;
+}
+
+#start{
+	color: red;
+	font-size: 18px;
+	width: 50%;
+	top: 25%;
+	left: 25%;
+	text-align: center;
+	position: absolute;
+}
+
+#howto{
+	color: black;
+	font-size: 15px;
+	position: absolute;
+	width: 50%;
+	top: 40%;
+	left: 25%;
+	text-align: center;
+}
+
+#end{
+	color: red;
+	font-size: 17px;
+	position: absolute;
+	width: 50%;
+	top: 30%;
+	left: 25%;
+	text-align: center;
+}
+
+#endScore{
+	color: black;
+	font-size: 15px;
+	position: absolute;
+	width: 50%;
+	top: 40%;
+	left: 25%;
+	text-align: center;
+}
+
+#nextRoundLabel{
+	color: red;
+	font-size: 25px;
+	position: absolute;
+	width: 50%;
+	top: 35%;
+	left: 25%;
+	text-align: center;
+}
+
+#form{
+	color: black;
+	font-size: 15px;
+	position: absolute;
+	width: 50%;
+	top: 50%;
+	left: 25%;
+	text-align: center;
+}

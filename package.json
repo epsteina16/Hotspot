@@ -1,0 +1,29 @@
+{
+  "name": "Hotspot",
+  "description": "Hotspot game. A fast, instict based, web game.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Aaron Epstein",
+    "email": "aaron.epstein@tufts.edu"
+  },
+  "contributors": [
+    {
+      "name": "Aaron Epstein",
+      "email": "aaron.epstein@tufts.edu"
+    }
+  ],
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "formidable": "^1.1.1",
+    "handlebars": "^4.0.10",
+    "multer": "^1.3.0",
+    "kerberos": "~0.0.17",
+    "mongodb": "~2.0.33"
+  },
+  "main": "main.js",
+  "license": "MIT",
+  "repository": "none"
+}
