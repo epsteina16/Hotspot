@@ -83,7 +83,7 @@ body{
 }
 
 .score-list{
-	padding: 10px;
+	margin-bottom: 15px;
 	font-size: 15px;
 	color: black;
 	margin-left: 0px;
@@ -108,7 +108,7 @@ body{
 	padding: 15px;
 	margin-top: 50px;
 	background-color: black;
-	display: block;
+	display: inline;
 }
 
 .returnHome:hover{
