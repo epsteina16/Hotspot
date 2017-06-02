@@ -44,9 +44,9 @@ app.post('/process', function(req, res){
 					res.redirect(303, '/highscores');
 				}
 			});
-			db.close();
 		}
 	})
+	db.close();
 })
 
 app.get('/highscores', function(req, res){
@@ -66,9 +66,9 @@ app.get('/highscores', function(req, res){
 					console.log("Not found");
 				}
 			})
-			db.close();
 		}
 	})
+	db.close();
 })
 
 app.use(function(req,res){
