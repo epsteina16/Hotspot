@@ -3,7 +3,7 @@ function Round(){
 	this.y = random(height);
 	this.col = color(255);
 	this.score = 0;
-	this.size = Math.sqrt((width * height)/1500);
+	this.size = Math.sqrt((width * height)/1200);
 	this.hotspot = new Hotspot(this.x,this.y);
 
 	this.clicked = function(){

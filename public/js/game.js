@@ -37,7 +37,7 @@ function setup(){
 	timer = createDiv("Time: 5");
 	timer.position(10, 80);
 
-	end = createDiv("Game Over. Press here to continue.");
+	end = createDiv("Game Over. Press here to play again.");
 	end.mousePressed(endClicked);
 	end.id('end');
 	endScore = createDiv("Your score was: " + score);
