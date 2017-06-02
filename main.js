@@ -45,8 +45,7 @@ app.post('/process', function(req, res){
 				}
 			});
 		}
-	})
-	db.close();
+	});
 })
 
 app.get('/highscores', function(req, res){
@@ -67,8 +66,7 @@ app.get('/highscores', function(req, res){
 				}
 			})
 		}
-	})
-	db.close();
+	});
 })
 
 app.use(function(req,res){
